@@ -10,9 +10,9 @@ from q4_softmaxreg import softmaxRegression, getSentenceFeature, accuracy, softm
 # NOTE: fill in one more "your code here" below before running!
 REGULARIZATION = None   # Assign a list of floats in the block below
 ### YOUR CODE HERE
-REGULARIZATION = np.logspace(-6,0.1,21)
+REGULARIZATION = np.logspace(-5,1,20) # from -5 to 1, 20 numbers, base = 10
 # REGULARIZATION = np.hstack([0,REGULARIZATION])
-# REGULARIZATION = [0.1,0.3,0.01,0.03,0.001,0.003,0.0001,0.0003,0.00001,0.00003] #1111
+# REGULARIZATION = [0.1,0.3,0.01,0.03,0.001,0.003,0.0001,0.0003,0.00001,0.00003] #1111:10 numbers
 # Load the dataset
 dataset = StanfordSentiment()
 tokens = dataset.tokens()
